@@ -9,6 +9,7 @@ dotenv.config()
 const app = express();
 
 const connect = () => {
+    mongoose.set('strictQuery', true)
     mongoose.connect(process.env.MONGO_URL)
         .then(() => {
             console.log("Connected to database");
