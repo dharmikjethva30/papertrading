@@ -1,9 +1,8 @@
 const mongoose = require('mongoose')
 
 const order_schema = mongoose.Schema({
-
     order_id: {
-        type: String,
+        type: Number,
     },
     symbol: {
         type: String,
