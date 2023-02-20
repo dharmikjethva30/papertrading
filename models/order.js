@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 
 const order_schema = mongoose.Schema({
-    order_id: {
-        type: Number,
+    order_status:{
+        type: String,
     },
     symbol: {
         type: String,
