@@ -53,6 +53,7 @@ const sell_order = async (req, res) => {
             order_status: "completed"
         })
         res.status(200).json({
+            amount_delta : amount_delta,
             message: "Order Placed Successfully"
         })
 
